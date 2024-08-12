@@ -4,14 +4,12 @@ allow-lan: false
 mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
+proxies:
+  
 proxy-groups:
   - name: 🎯 全局选择
     type: select
     proxies:
-      - 🇺🇸US-45.158.171.227-152
-      - 🇫🇷FR-144.24.198.160-173
-      - 🇦🇶GOOGLE-34.92.186.236-153
-      - 🇦🇶GOOGLE-35.194.109.105-158
       - ♻️ 自动选择
       - 👉 选择节点
       - 🔃 失败切换
